@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="rosgraph_monitor" exec="rosgraph_monitor_node" />
+  <node pkg="telegraf_bridge" exec="telegraf_bridge" />
+  <node pkg="foxglove_bridge" exec="foxglove_bridge" />
+</launch>
