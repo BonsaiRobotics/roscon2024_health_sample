@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <launch>
+  <arg name="telegraf_uri" default="localhost" />
   <node pkg="rosgraph_monitor" exec="rosgraph_monitor_node" />
-  <node pkg="telegraf_bridge" exec="telegraf_bridge" />
+  <node pkg="telegraf_bridge" exec="telegraf_bridge">
+    <param name="telegraf_uri" value="$(var telegraf_uri)" />
+  </node>
   <node pkg="foxglove_bridge" exec="foxglove_bridge" />
 </launch>
