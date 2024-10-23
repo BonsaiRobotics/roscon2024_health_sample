@@ -1108,7 +1108,7 @@
           "measurement": "topic_statistics",
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "SELECT 1000000000 / mean(\"mean\") FROM \"topic_statistics\" WHERE (\"type\"::tag = 'published_period') AND $timeFilter GROUP BY time($__interval), \"topic\"::tag, \"node\"::tag fill(none)",
+          "query": "SELECT 1000000000 / mean(\"mean\") AS pubHz FROM \"topic_statistics\" WHERE (\"type\"::tag = 'published_period') AND (\"topic\"::tag != '/parameter_events') AND $timeFilter GROUP BY time($__interval), \"topic\"::tag, \"node\"::tag fill(none)",
           "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
@@ -1250,7 +1250,7 @@
           "measurement": "topic_statistics",
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "SELECT 1000000000 / mean(\"mean\") FROM \"topic_statistics\" WHERE (\"type\"::tag = 'received_period') AND $timeFilter GROUP BY time($__interval), \"topic\"::tag, \"node\"::tag fill(none)",
+          "query": "SELECT 1000000000 / mean(\"mean\") AS subHz FROM \"topic_statistics\" WHERE (\"type\"::tag = 'received_period') AND (\"topic\"::tag != '/parameter_events') AND $timeFilter GROUP BY time($__interval), \"topic\"::tag, \"node\"::tag fill(none)",
           "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
@@ -1295,6 +1295,6 @@
   "timezone": "browser",
   "title": "Sample Vehicle Dashboard",
   "uid": "ce1jznatkz8xsc",
-  "version": 4,
+  "version": 5,
   "weekStart": ""
 }

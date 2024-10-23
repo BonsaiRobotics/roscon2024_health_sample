@@ -9,7 +9,7 @@
     },
     "DiagnosticStatusPanel!3b2oqkn": {
       "selectedHardwareId": "health",
-      "selectedName": "rosgraph::Graph::Continuity::/diagnostics_agg",
+      "selectedName": "Rosgraph::PublishFrequency::/camera_front_center/image_rgb",
       "topicToRender": "/diagnostics"
     },
     "DiagnosticSummary!3e86hmw": {
@@ -21,7 +21,7 @@
     },
     "DiagnosticStatusPanel!1x1dhvg": {
       "selectedHardwareId": "",
-      "selectedName": "/Nodes",
+      "selectedName": "/Health/RosGraph/Nodes",
       "topicToRender": "/diagnostics_agg"
     },
     "RawMessages!u9ya46": {
@@ -81,7 +81,7 @@
                 "first": "DiagnosticSummary!3e86hmw"
               },
               "direction": "row",
-              "splitPercentage": 62.529550827423165
+              "splitPercentage": 66.87721631205673
             },
             "second": {
               "first": "RawMessages!u9ya46",
@@ -90,8 +90,11 @@
               "splitPercentage": 50.31210986267166
             },
             "direction": "row",
-            "splitPercentage": 70.09113504556753
+            "splitPercentage": 70.77534791252485
           }
+        },
+        {
+          "title": ""
         }
       ]
     }
