@@ -1,10 +1,12 @@
 # Bonsai ROS Health Sample Application
 
-Sample entrypoint, as discussed in Roscon2024 talk "ROS Robot Application Health Monitoring: a Bonsai Approach"
+Sample entrypoint, as discussed in Roscon2024 talk "ROS Robot Application Health Monitoring: a Bonsai Approach". 
+
+See the [slides](https://docs.google.com/presentation/d/19p2G8Rt3dwW_Snkc8TLT34b5nGMlO3yrbegs6RNPn84/edit?usp=sharing). 
+
+Vimeo recording will be added here when available.
 
 For using the components from https://github.com/BonsaiRobotics/ros_health_components
-
-NOTE: Vimeo Link to the Roscon2024 talk will be added here when available.
 
 Provides:
 * [sample_health_app](./src/sample_health_app/) - Within this repository, provides some rosdep dependencies and `sample.launch`
